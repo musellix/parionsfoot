@@ -1,0 +1,26 @@
+----- BACK -----
+generer doc
+"synthetiser" league-team-player
+
+
+----- LEAGUE -----
+ajouter image loading - League
+Gestion des erreurs
+
+
+------ TEAM ------
+ajouter image loading - Team
+Gestion des erreurs
+
+
+----- PLAYER -----
+player - afficher mieux price
+
+
+
+
+
+
+i18n
+admin
+

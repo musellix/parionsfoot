@@ -1,0 +1,22 @@
+- difference dependencies et devDependencies
+
+- licence ISC
+
+- typescript : difference es2015 et es6
+
+
+
+- comment ameliorer 
+vaut-il mieux tout carger dès le debut ? 
+au faire plusieurs appels serveur
+
+
+
+
+temps passé
+2h
+
+
+
+
+

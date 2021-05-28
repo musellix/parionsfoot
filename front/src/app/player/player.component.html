@@ -1,0 +1,7 @@
+<img src="{{player.thumbnail}}">
+<div class="infos">
+   <span>{{player.name}}</span>
+   <span>{{player.position}}</span>
+   <span>birthdate : {{player.born | date:'yyyy/MM/dd'}}</span>
+   <span>price : {{player.signin.amount | currency:player.signin.currency}}</span>
+</div>

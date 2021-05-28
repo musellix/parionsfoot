@@ -1,0 +1,14 @@
+<div *ngIf="team">
+   <div class="p-3 mb-2 bg-primary text-white">{{team.name}}</div>
+
+   <div *ngIf="team.players.length > 0">
+     <div class="player" *ngFor="let player of team.players">
+        <xix-player [player]="player"></xix-player>
+     </div>
+   </div>
+
+   <div *ngIf="team.players.length === 0">
+      <span>No player found</span>
+   </div>
+
+</div>

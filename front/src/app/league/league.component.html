@@ -1,0 +1,17 @@
+<div *ngIf="league">
+   <div class="p-3 mb-2 bg-success text-white">{{league.name}}</div>
+
+   <div class="container" *ngIf="league.teams.length > 0">
+      <div class="row">
+         <div class="col-6" *ngFor="let team of league.teams">
+            <a routerLink="/team/{{team._id}}">
+               <img src="{{team.thumbnail}}">
+            </a>
+         </div>
+      </div>
+   </div>
+
+   <div *ngIf="league.teams.length === 0">
+      <span>No team found</span>
+   </div>
+</div>
