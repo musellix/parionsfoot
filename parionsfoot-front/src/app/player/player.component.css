@@ -1,0 +1,33 @@
+img {
+   float: left;
+   width: 100px;
+   margin: 10px 0 10px 10px;
+}
+
+.infos {
+   float: left;
+   margin: 10px;
+}
+
+span {
+   display: block;
+}
+
+.name {
+   font-weight: bold;
+}
+
+.position {
+   font-style: italic;
+   color: #999999;
+}
+
+.birthdate {
+   font-style: italic;
+   color: #999999;
+}
+
+.price {
+   font-style: italic;
+   color: #999999;
+}

@@ -1,0 +1,12 @@
+----- LEAGUE -----
+ajouter image loading - League
+
+
+------ TEAM ------
+ajouter image loading - Team
+
+
+----- PLAYER -----
+player - afficher mieux price
+
+
