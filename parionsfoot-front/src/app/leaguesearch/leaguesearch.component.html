@@ -1,6 +1,10 @@
 <div>
    <input [formControl]="input" class="form-control mr-sm-2" type="search" placeholder="Search by league" aria-label="Search">
 
+   <div *ngIf="noLeagueFound">
+      <span class="text-info">There are no leagues matching your search</span>
+   </div>
+
    <div *ngIf="hasError">
       <span class="text-danger">An error has occured</span>
    </div>

@@ -2,6 +2,7 @@
 <div class="infos">
    <span class="name">{{player.name}}</span>
    <span class="position">{{player.position}}</span>
-   <span class="birthdate">birthdate : {{player.born | date:'yyyy/MM/dd'}}</span>
-   <span class="price">price : {{player.signin.amount | currency:player.signin.currency}}</span>
+   <span class="birthdate">birthdate : {{player.born | date:'yyyy-MM-dd'}}</span>
+   <!-- digitInfo : minimumNumberOfInteger:minimumFractions-maxFractions -->
+   <span class="price">price : {{player.signin.amount | currency:player.signin.currency.toUpperCase():"symbol":'1.0-2'}}</span>
 </div>

@@ -39,8 +39,6 @@ export class LeagueComponent implements OnInit {
          next: (league: LeagueModel) => {
             this.hasError = false;
             this.league = league;
-            console.log(`League component :: this.league = `);
-            console.log(this.league)
             this.titleService.setTitle(this.league.name);
          },
          error: (error: any) => {

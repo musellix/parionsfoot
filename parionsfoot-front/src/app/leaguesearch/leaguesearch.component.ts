@@ -17,6 +17,7 @@ export class LeaguesearchComponent implements OnInit {
    public input: FormControl = new FormControl();
    public leagues: Array<LeagueModel> = [];
    public router: Router;
+   public noLeagueFound: boolean;
    public hasError: boolean;
 
    @Output() readonly leagueFound: EventEmitter<LeagueModel> = new EventEmitter<LeagueModel>();
@@ -38,10 +39,18 @@ export class LeaguesearchComponent implements OnInit {
             next: (results: Array<LeagueModel>) => {
                this.hasError = false;
                this.leagues = results;
+
+               if( this.leagues.length === 0) {
+                  this.noLeagueFound = true;
+               } 
+               else {
+                  this.noLeagueFound = false;
+               }
+
                if (this.leagues.length === 1) {
                   this.input.setValue(this.leagues[0].name);
                   this.router.navigateByUrl(`/league/${this.leagues[0]._id}`);
-               }
+               } 
             },
             error: (error: any) => {
                this.hasError = true;
